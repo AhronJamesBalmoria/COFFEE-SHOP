@@ -1,0 +1,161 @@
+:root {
+  --primary: #6f4e37;
+  --accent: #c9a66b;
+  --background: #f8f5f2;
+  --text: #333;
+  --white: #fff;
+  --shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--background);
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  max-width: 1000px;
+  margin: 2rem auto;
+  background: var(--white);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  padding: 2rem;
+}
+
+footer {
+  background-color: #1e3932;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 1rem;
+    margin: 1rem;
+  }
+}
+
+/* menu */
+
+.logo img{
+  height: 75px;
+  width: auto;
+  border-radius: 50%;
+}
+
+section {
+  box-align: center;
+}
+  
+main li {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 5px;
+  margin-bottom: 5px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  font-size: 24px;
+  text-align: center;
+}
+
+#menu {
+  font-size: 48px;
+  text-align: center;
+}
+
+.menuCategory {
+  font-size: 36px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.imgItem {
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+  margin-top: 20px;
+  margin-left: 40px;
+  border-radius: 15%;
+}
+
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 98, 73, 0.95);;
+  height: 90px;
+  padding: 0 18px;
+  margin-bottom: 20px;
+}
+
+.menu .logo {
+  display: flex;
+  align-items: center;
+}
+
+.menu .logo img {
+  height: 75px;
+  width: auto;
+  margin-right: 20px;
+}
+
+.menu ul,
+.menu li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu ul {
+  width: 100%;
+  text-align: right;
+}
+
+.menu li {
+  display: inline-block;
+  position: relative;
+}
+
+.menu a {
+  display: block;
+  padding: 0 14px;
+  line-height: 71px;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.menu a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.footer-content h3 {
+  margin-left: 10px;
+  font-size: 24px;
+  margin-bottom: 10px;
+  letter-spacing: 20px;
+}
+
+.footer-content p {
+  margin: 8px 0;
+  font-size: 15px;
+  color: #d6d6d6;
+}
